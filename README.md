@@ -32,3 +32,16 @@ setTimeout(showit, 3000);
  
 $( ".myDiv" ).blink(); // Makes all the links green.
 ```
+
+```
+$.fn.blink = function() {
+  function blinkFunction() {
+    $('.show').toggleClass('hide');
+  }
+  
+  setInterval(blinkFunction, 300);
+
+};
+ 
+$( ".myDiv" ).blink(); 
+```
