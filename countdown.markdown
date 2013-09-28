@@ -1,10 +1,9 @@
 ```
 function countdown(num) {
-  var i = num - 1;
   var ddd = setInterval(function(){
-    console.log(i + 1);
-    if(i == 0){clearInterval(ddd);};
-      i = i - 1;
+    console.log(num);
+    num = num - 1;
+    if(num == 0){clearInterval(ddd);};
     },3000);
 };
 
