@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script>
+$.fn.blink = function() {
+  //console.log(this);
+  var blinkFunction = function() {
+    console.log(this);
+    //console.log(this.css('.myDiv'));
+    this.toggleClass('hide');
+  }
+  //blinkFunction.call(this);
+  //blinkFunction.bind(this);
+  var obj = this;
+  setInterval(function(){blinkFunction.call(obj)} , 300);
+};
+ 
+$( ".myDiv" ).blink(); 
+</script>
+<STYLE type="text/css">
+  .hide {
+    display: none;
+  }
+
+</STYLE>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <a href="http://google.com">Google</a>
+  <div class='myDiv hide'>
+    I'm a blink tag!
+  </div>
+  
+</body>
+</html>
