@@ -8,14 +8,13 @@
 $.fn.blink = function() {
   //console.log(this);
   var blinkFunction = function() {
-    console.log(this);
+    //console.log(this);
     //console.log(this.css('.myDiv'));
-    this.toggleClass('hide');
+    $(this.selector).toggleClass('hide');
   }
   //blinkFunction.call(this);
   //blinkFunction.bind(this);
-  var obj = this;
-  setInterval(function(){blinkFunction.call(obj)} , 300);
+  setInterval(blinkFunction.bind(thid) , 300);
 };
  
 $( ".myDiv" ).blink(); 
