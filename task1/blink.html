@@ -14,7 +14,7 @@ $.fn.blink = function() {
   }
   //blinkFunction.call(this);
   //blinkFunction.bind(this);
-  setInterval(blinkFunction.bind(thid) , 300);
+  setInterval(blinkFunction.bind(this) , 300);
 };
  
 $( ".myDiv" ).blink(); 
