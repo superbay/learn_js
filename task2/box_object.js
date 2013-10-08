@@ -1,3 +1,19 @@
+(function($) {
+  /* Constructor: Box */
+  function Box(type, color, id) {
+    this.type = type;
+    this.color = color;
+    this.id = id;
+    this.DOM = $('#' + id);
+  }
+
+  /* Method: after-match*/
+  Box.prototype.after-match() {
+    
+  }
+
+}) ( jQuery);
+
 $(document).ready(function(){
   var pickcells = function(colors) {
     // for an arbitrary number of cells and colors, pick 2 of each 
