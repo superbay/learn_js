@@ -8,11 +8,12 @@
   }
 
   /* Method: after-match*/
-  Box.prototype.after-match() {
-    
+  Box.prototype.after-match = function() {
+    //console.log('math');
+    alert('right');
   }
 
-}) ( jQuery);
+}) (jQuery);
 
 $(document).ready(function(){
   var pickcells = function(colors) {
