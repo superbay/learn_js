@@ -8,7 +8,7 @@
   }
 
   /* Method: after-match*/
-  Box.prototype.after-match = function() {
+  Box.prototype.after_math = function() {
     //console.log('math');
     alert('right');
   }
